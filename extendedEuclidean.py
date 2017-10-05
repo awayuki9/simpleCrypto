@@ -28,8 +28,12 @@ while(r2>0):
     
 stri="\t"+ str(r1) + "\t" + str(r2) + "\t" + "\t" + str(t1) + "\t" + str(t2) 
 print(stri)
-stri=str(t1) + " mod " + str(z) + " = " + str(t1%z)
-print(stri)
-stri="inverse of " + str(inv) + " in Z" + str(z) + " is ---> " + str(t1%z)
-print(stri)
 
+if(r1==1):
+    stri=str(t1) + " mod " + str(z) + " = " + str(t1%z)
+    print(stri)
+    stri="inverse of " + str(inv) + " in Z" + str(z) + " is ---> " + str(t1%z)
+    print(stri)
+else:
+    stri = "r1 != 1 -----> no inverse pair"
+    print(stri)
